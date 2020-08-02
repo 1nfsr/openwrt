@@ -85,4 +85,3 @@ For a list of supported devices see the [OpenWrt Hardware Database](https://open
 ## License
 
 OpenWrt is licensed under GPL-2.0
->>>>>>> openwrt/master
