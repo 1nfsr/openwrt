@@ -26,10 +26,11 @@ You need `gcc`, `binutils`, `bzip2`, `flex`, `python`, `perl`, `make`, `find`, `
 the cross-compile toolchain and then cross-compile the Linux kernel & all
 chosen applications for your target system.
 
+
 Sunshine!
 
-	Your OpenWrt Community
+Your OpenWrt Community
 
-	[http://www.openwrt.org](http://www.openwrt.org)
+[http://www.openwrt.org](http://www.openwrt.org)
 
 
