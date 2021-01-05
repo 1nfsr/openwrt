@@ -27,7 +27,9 @@ the cross-compile toolchain and then cross-compile the Linux kernel & all
 chosen applications for your target system.
 
 Sunshine!
+
 	Your OpenWrt Community
+
 	http://www.openwrt.org
 
 
