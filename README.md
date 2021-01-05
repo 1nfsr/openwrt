@@ -30,6 +30,6 @@ Sunshine!
 
 	Your OpenWrt Community
 
-	http://www.openwrt.org
+	[http://www.openwrt.org](http://www.openwrt.org)
 
 
