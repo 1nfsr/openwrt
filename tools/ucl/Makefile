@@ -21,31 +21,31 @@ HOSTCC :=gcc
 HOST_CFLAGS +=-std=gnu89
 
 define Host/Prepare
-    $(Host/Prepare/Default)
-    mkdir -p $(STAGING_DIR_HOST)/include/ucl
+	$(Host/Prepare/Default)
+	mkdir -p $(STAGING_DIR_HOST)/include/ucl
 endef
 
 define Host/Configure
-    (cd $(HOST_BUILD_DIR); \
-    CC="$(HOSTCC)" \
-    CFLAGS="$(HOST_CFLAGS)" \
-    ./configure --prefix=$(STAGING_DIR_HOST) \
-    );
-    $(call Host/Configure/Default)
+	(cd $(HOST_BUILD_DIR); \
+	CC="$(HOSTCC)" \
+	CFLAGS="$(HOST_CFLAGS)" \
+	./configure --prefix=$(STAGING_DIR_HOST) \
+	);
+	$(call Host/Configure/Default)
 endef
 
 define Host/Compile
-    $(MAKE) -C $(HOST_BUILD_DIR)
+	$(MAKE) -C $(HOST_BUILD_DIR)
 endef
 
 define Host/Install
-    $(MAKE) -C $(HOST_BUILD_DIR) install
+	$(MAKE) -C $(HOST_BUILD_DIR) install
 endef
 
 define Host/Clean
-    $(MAKE) -C $(HOST_BUILD_DIR) uninstall
-    rm -rf $(HOST_BUILD_DIR)
-    rm -rf $(STAGING_DIR_HOST)/include/ucl
+	$(MAKE) -C $(HOST_BUILD_DIR) uninstall
+	rm -rf $(HOST_BUILD_DIR)
+	rm -rf $(STAGING_DIR_HOST)/include/ucl
 endef
 
 $(eval $(call HostBuild))
